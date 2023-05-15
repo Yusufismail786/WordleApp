@@ -13,4 +13,8 @@ jobs:
       - checkout
       - run:
           command: ./gradlew build
-
+      - run:
+          name: Download Dependencies
+          command: |
+            sudo chmod +x ./gradlew
+            ./gradlew androidDependencies 
