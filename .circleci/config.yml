@@ -12,7 +12,7 @@ jobs:
     steps:
       - checkout
       - run : chmod permissions
-        - command: chmod=x ./gradlew
+        - command: chmod +x ./gradlew
       - run:
           command: ./gradlew build
 
