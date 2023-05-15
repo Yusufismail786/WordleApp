@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/GameBtn"
+        android:layout_width="362dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="358dp"
+        android:layout_marginBottom="325dp"
+        android:text="Wordle Game"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/RviewBtn"
+        android:layout_width="360dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="242dp"
+        android:text="List Of Words"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GameBtn" />
+
+    <EditText
+        android:id="@+id/NamePT"
+        android:layout_width="248dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="256dp"
+        android:layout_marginEnd="92dp"
+        android:ems="10"
+        android:hint="Please Enter your Username"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="322dp"
+        android:layout_height="92dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="24dp"
+        android:text="Welcome to Wordle!"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/NamePT"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
